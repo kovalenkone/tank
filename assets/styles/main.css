@@ -182,10 +182,12 @@ main {
   height: 100%;
   object-fit: contain;
 }
-
-.row {
-  --bs-gutter-x: 24px;
-  --bs-gutter-y: 24px;
+.hover-orange {
+  transition: var(--transition);
+}
+.hover-orange:hover,
+.hover-orange:focus-visible {
+  color: var(--main-orange);
 }
 
 /* checkbox */
@@ -870,6 +872,11 @@ main {
   font-size: 16px;
   line-height: 150%;
   color: #fff;
+  transition: var(--transition);
+}
+.in-stock-banner-form-sumbit:hover,
+.in-stock-banner-form-sumbit:focus-visible {
+  opacity: 0.95;
 }
 .in-stock-filter-btn {
   display: none;
